@@ -1,0 +1,236 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #121212; 
+    color: #e0e0e0; 
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+header {
+    background-color: rgba(18, 18, 18, 0.95);
+    padding: 20px 10%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: 0.3s;
+    border-bottom: 1px solid #333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #ff4d4d;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff4d4d;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10%;
+    background: linear-gradient(135deg, #1a1a1a 0%, #121212 100%);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.hero h1 span {
+    color: #ff4d4d;
+}
+
+.hero h3 {
+    font-size: 1.5rem;
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+/* Social Buttons */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 25px;
+    background: transparent;
+    color: #ff4d4d;
+    border: 2px solid #ff4d4d;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #ff4d4d;
+    color: #121212;
+    box-shadow: 0 0 20px rgba(255, 77, 77, 0.4);
+}
+
+/* LinkedIn Specific Style */
+.linkedin-btn {
+    color: #0077b5;
+    border-color: #0077b5;
+}
+
+.linkedin-btn:hover {
+    background: #0077b5;
+    color: #fff;
+    box-shadow: 0 0 20px rgba(0, 119, 181, 0.4);
+}
+
+/* Skills Section */
+.skills {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill-tags span {
+    background: #1e1e1e;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid #333;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.skill-tags span:hover {
+    border-color: #ff4d4d;
+    color: #ff4d4d;
+}
+
+/* Projects Section */
+.projects {
+    padding: 100px 10%;
+    background-color: #161616;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background: #1e1e1e;
+    padding: 35px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    border-left: 5px solid #ff4d4d; 
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    background: #252525;
+    border-color: #ff4d4d33;
+}
+
+.project-card h3 {
+    margin-bottom: 15px;
+    color: #ff4d4d;
+}
+
+.project-card p {
+    color: #bbb;
+    font-size: 0.95rem;
+}
+
+.tech-stack {
+    display: block;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #888;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 60px 10%;
+    background: #0f0f0f;
+    border-top: 1px solid #222;
+}
+
+footer p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+    nav ul { display: none; }
+    .header { padding: 15px 5%; }
+    .social-links { flex-direction: column; align-items: center; }
+}
