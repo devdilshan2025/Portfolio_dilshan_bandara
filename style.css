@@ -66,14 +66,14 @@ nav ul li a:hover {
     color: #ff4d4d;
 }
 
-/* Hero Section - Padding එක දාලා හදපු කොටස */
+
 .hero {
     min-height: 100vh; 
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 120px 10% 60px; /* Nav bar එක නිසා උඩින් වැඩිපුර ඉඩක් තැබුවා */
+    padding: 120px 10% 60px; 
     background: linear-gradient(135deg, #1a1a1a 0%, #121212 100%);
 }
 
